@@ -5,8 +5,6 @@ import map_world
 import raycast
 import classes
 
-dimension = int(input("1: 2D\n2: 3D\n"))
-
 # pygame setup
 pygame.init()
 window = pygame.display.set_mode((game_settings.WIDTH, game_settings.HEIGHT))
