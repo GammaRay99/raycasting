@@ -3,6 +3,7 @@ Class file of the script.
 Contains:
     -player class
     -wall class
+    -ray class
 """
 import pygame
 import math
