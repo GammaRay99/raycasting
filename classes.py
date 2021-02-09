@@ -61,11 +61,9 @@ class Wall:
         self.color = game_settings.COLORS['gray']
         self.size = game_settings.TILE
 
-    def draw(self, win, dimension):
-        if dimension == 1:
-            pygame.draw.rect(win, self.color, (self.x, self.y, self.size, self.size), 2)
-        else:
-            pass
+    def draw(self, win):
+        pygame.draw.rect(win, self.color, (self.x, self.y, self.size, self.size), 2)
+
 
 
 class Ray:
@@ -74,6 +72,5 @@ class Ray:
         self.end = cords_end
         self.color = game_settings.COLORS['gray']
 
-    def draw(self, win, dimension):
-        if dimension == 1:
-            pygame.draw.line(win, self.color, self.start, self.end, 2)
+    def draw(self, win):
+        pygame.draw.line(win, self.color, self.start, self.end, 2)
