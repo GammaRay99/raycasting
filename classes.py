@@ -151,3 +151,4 @@ class Ray:
                                                            # number in order to make the formula working.
         y = game_settings.HEIGHT / 2 - height / 2
         pygame.draw.rect(win, color, (x, y, game_settings.RAY_WIDTH, height))
+
