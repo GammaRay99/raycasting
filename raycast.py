@@ -40,6 +40,7 @@ def cast_rays(player_cords: tuple, player_angle: float) -> list:
 
         distance = distance
         # todo: understand distance * math.cos(player_angle - current_angle)
+        # todo: optimise ^
         rays.append(classes.Ray(player_cords, (x_ray, y_ray), distance))  # finally creating the ray
         current_angle += game_settings.DELTA_ANGLE  # incrementing the angle for the next rays
 
